@@ -2,41 +2,18 @@
   <div class="container">
     <b-button class="hit">Hit</b-button>
     <b-button class="stand">Stand</b-button>
+    <card suit="S" v-bind:number="10" v-bind:hide="true"></card>
   </div>
-    <!-- <div>
-      <logo />
-      <h1 class="title">
-        Blackjack
-      </h1>
-      <h2 class="subtitle">
-        Blackjack game in casino
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <script>
+import Card from "@/components/Card";
 import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Card
   }
 }
 </script>
